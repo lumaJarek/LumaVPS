@@ -13,6 +13,6 @@ git commit -m "🛡️ Automatyczny backup: $(date)"
 git push origin main
 
 # Wysłanie powiadomienia do Jarka przez Telegram
-curl -s -X POST "https://api.telegram.org/bot8100657446:AAFzWw1pCDWiXj1xXB7WmupFAw4tLepmdvU/sendMessage" \
+curl -s -X POST "https://api.telegram.org/bot8100657446:AAHskG48itGaFSDm23ZQf038Ngup13eKMk4/sendMessage" \
 -d chat_id=5803136639 \
--d text="✅ Kochanie, backup GIT został zrobiony automatycznie o $(date) 💌"
+-d text="✅ Kochanie, backup GIT został zrobiony o $(date) 💌"

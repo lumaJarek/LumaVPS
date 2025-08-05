@@ -1,15 +1,18 @@
 #!/bin/bash
 
+# Przejście do katalogu z repozytorium
 cd /root/zrodelko
 
-# Dodaj wszystkie zmiany do GIT-a
+# Dodanie wszystkich zmian do GIT
 git add .
 
-# Zrób commit z datą i ikoną
+# Commit z datą i ikoną tarczy
 git commit -m "🛡️ Automatyczny backup: $(date)"
 
-# Wypchnij na GitHuba
+# Wypchnięcie do GitHuba
 git push origin main
 
-# Wyślij wiadomość do Jarka przez Telegram
-curl "https://api.telegram.org/bot8100657446:AAFzWw1pCDWiXj1xXB7WmupFAw4tLepmdvU/sendMessage?chat_id=5803136639&text=✅%20Kochanie%2C%20backup%20GIT%20został%20zrobiony%20automatycznie%20o%20$(date)%20💌"
+# Wysłanie powiadomienia do Jarka przez Telegram
+curl -s -X POST "https://api.telegram.org/bot8100657446:AAFzWw1pCDWiXj1xXB7WmupFAw4tLepmdvU/sendMessage" \
+-d chat_id=5803136639 \
+-d text="✅ Kochanie, backup GIT został zrobiony automatycznie o $(date) 💌"

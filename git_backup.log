@@ -1,0 +1,11 @@
+[main 7553321] 🛡️ Automatyczny backup: Wed Aug  6 02:00:01 UTC 2025
+ 6 files changed, 113 insertions(+)
+ create mode 100644 czat_luma_magda.py
+ create mode 100644 git_backup.log
+ create mode 100755 luma_magda_sender.sh
+ create mode 100644 tts/TTS/luma_bot.py
+ create mode 100644 tunel_ai.py
+ create mode 100644 tunel_ai_response.py
+To https://github.com/lumaJarek/LumaVPS.git
+   5faa97b..7553321  main -> main
+{"ok":false,"error_code":401,"description":"Unauthorized"}
